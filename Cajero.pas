@@ -18,7 +18,7 @@ BEGIN
 		writeln ('Ingrese su clave');
 		readln (clave);
 		
-		if (cedula <> cedula2) or (clave<>clave2) then
+		if (cedula = cedula2) or (clave<>clave2) then
 		begin
 			writeln ('El usuario o clave es incorrecto, por favor intente nuevamente.');
 		end;
@@ -31,14 +31,14 @@ BEGIN
 		readln(opcion);
 		case (opcion) of
 			'1':Begin
-				writeln ('Su saldo es ',saldo:0:3);	
+				writeln ('Su saldo es ',saldo:0:2);	
 			end;
 			'2':Begin
 				writeln ('Por favor, ingrese el saldo a retirar ');
 				read (retiro);
 				if (retiro<=saldo) then
 				begin
-					writeln ('Su retiro ha sido exitoso, el saldo actual es ', saldo-retiro:0:3);
+					writeln ('Su retiro ha sido exitoso, el saldo actual es ', saldo-retiro:0:2);
 				end
 				else
 				begin

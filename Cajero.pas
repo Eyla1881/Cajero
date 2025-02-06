@@ -24,7 +24,7 @@ BEGIN
 		end;
 	until (cedula=cedula2) and (clave=clave2);
 	Repeat
-		writeln ('1. Ver saldo');
+	
 		writeln ('2. Realizar Retiro');
 		writeln ('3. Cambio de clave');
 		writeln ('4. Salir');
